@@ -1,6 +1,6 @@
 # Markup With Meaning
 
-Using keywords, we can begin to create a new markup. 
+Using keywords, we can begin to create a new markup.
 
 ## Example
 Instead of writing:
@@ -20,16 +20,10 @@ In this context, the keyword `webkit` is simple to recognize. It has semantic me
 Arbitrary keywords has been chosen for this initial concept, with consideration for markup highlights in common text editors.
 
 ## Instructions for use:
-
-Place this script tag before the closing body tag in your working `html` file. it will convert all predefined keywords.
+There are three files required to make this work, currently. Make sure these lines are included before the closing `body`.  
 ```
-<script src="targets.js" type="text/javascript"></script>
-````
-
-In order to retrieve the generated html markup, insert this script tag. it will display the source, instead of rendering the markup.
-
+    <!-- leave this line for functionality -->
+    <link rel="stylesheet" href="markupstyle.css" type="text/css"><button class="viewSourceBtn"></button><textarea class="viewSourcePreview"></textarea><script src="targets.js" type="text/javascript"></script><script src="source.js" type="text/javascript"></script>
+    <!-- it will be removed in the source preivew -->
 ```
-<script src="show-source.js" type="text/javascript"></script>
-```
-
-> Currently, in order to ensure this does not end up in the final markup, these script tags, and file names, may not be altered.
+> In upcoming updates, this will be condensed
