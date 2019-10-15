@@ -20,10 +20,11 @@ In this context, the keyword `webkit` is simple to recognize. It has semantic me
 Arbitrary keywords has been chosen for this initial concept, with consideration for markup highlights in common text editors.
 
 ## Instructions for use:
-There are three files required to make this work, currently. Make sure these lines are included before the closing `body`.  
+Currently, there is additional markup required to make this work. Include the following lines before the closing `body`. This will be removed from the _source view_ automatically.  
 ```
-    <!-- leave this line for functionality -->
-    <link rel="stylesheet" href="markupstyle.css" type="text/css"><button class="viewSourceBtn"></button><textarea class="viewSourcePreview"></textarea><script src="targets.js" type="text/javascript"></script><script src="source.js" type="text/javascript"></script>
-    <!-- it will be removed in the source preivew -->
+  <link rel="stylesheet" href="markupstyle.css" type="text/css">
+  <button class="viewSourceBtn"></button><textarea class="viewSourcePreview"></textarea>
+  <script src="targets.js" type="text/javascript"></script>
+  <script src="source.js" type="text/javascript"></script>
 ```
 > In upcoming updates, this will be condensed
